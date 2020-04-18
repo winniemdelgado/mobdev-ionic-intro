@@ -1,22 +1,14 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      My first ionic app
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
+<ion-header>
     <ion-toolbar>
-      <ion-title size="large">Hello World</ion-title>
+        <ion-title>
+            Ionic Blank
+        </ion-title>
     </ion-toolbar>
-  </ion-header>
 
+</ion-header>
 <ion-content class="ion-padding">
-    <ion-button expand="full" (click)="updateMyValue()">Click Me!</ion-button>
+    <ion-button expand="full" (click)="updateMyValue()">Click me!</ion-button>
 
- 
- <p>{{myVariable}}</p>
+    {{ myVariable }}
 
 </ion-content>
