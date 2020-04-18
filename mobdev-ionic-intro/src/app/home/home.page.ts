@@ -9,4 +9,4 @@ export class HomePage {
     updateMyValue() {
         this.myVariable = 'Now the force is even stronger!';
     }
-};
+}
