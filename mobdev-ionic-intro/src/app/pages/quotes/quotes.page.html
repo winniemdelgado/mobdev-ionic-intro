@@ -3,10 +3,13 @@
     <ion-title>Quotes</ion-title>
   </ion-toolbar>
 </ion-header>
-<ion-content>
-    <ion-list>
-        <ion-item button detail lines="inset" *ngFor="let quote of quotes | async" (click)="openDetails(quote)">
-        {{ quote.title }}
+<ion-content padding>
+        <ion-card *ngFor="let quote of quotes | async" class ="movie-card">
+        <ion-item class = "movie-info" lines = "none">
+      "  {{ quote.title }}  " 
         </ion-item>
-    </ion-list>
+        <ion-item class = "movie info" line = "none">
+         "  {{ quote.title }}  "
+        </ion-item>
+        </ion-card>
 </ion-content>
