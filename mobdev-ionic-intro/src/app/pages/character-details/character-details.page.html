@@ -1,25 +1,24 @@
 <ion-header>
-  <ion-toolbar color="primary">
-    <ion-buttons slot="start">
-      <ion-back-button defaulthref="/tabs/characters"></ion-back-button>
-    </ion-buttons>
-    <ion-title>Character Details</ion-title>
-  </ion-toolbar>
+	<ion-toolbar color="primary">
+		<ion-buttons slot="start">
+			<ion-back-button defaultHref="/tabs/characters"></ion-back-button>
+		</ion-buttons>
+		<ion-title> {{ character?.name }}</ion-title>
+	</ion-toolbar>
 </ion-header>
 <ion-content class="ion-padding">
-</ion-content>
-  <ion-card *ngIf="character" class="movie-card">
-    <ion-card-header>Character {{ character.name }}: {{ character.character }}</ion-card-header>
-    <ion-card-content>
-      {{ character.season }}
-    </ion-card-content>
-    <ion-item class="movie-info" lines="none">
-      <ion-icon name="character" slot="start"></ion-icon>
-      Occupation: {{ character.occupation }}
-    </ion-item>
-    <ion-item class="movie-info" lines="none">
-      <ion-icon name="calendar" slot="start"></ion-icon>
-      Birthday: {{ character.birthday }}
-    </ion-item>
-  </ion-card>
+	<ion-card *ngIf="character" class="movie-card">
+		<ion-card-header>Character {{ character.name }}: {{ character.character }}</ion-card-header>
+		<ion-card-content>
+			{{ character.season }}
+		</ion-card-content>
+		<ion-item class="movie-info" lines="none">
+			<ion-icon name="character" slot="start"></ion-icon>
+			Occupation: {{ character.occupation }}
+		</ion-item>
+		<ion-item class="movie-info" lines="none">
+			<ion-icon name="calendar" slot="start"></ion-icon>
+			Birthday: {{ character.birthday }}
+		</ion-item>
+	</ion-card>
 </ion-content>
