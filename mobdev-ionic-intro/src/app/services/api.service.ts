@@ -31,6 +31,6 @@ export class ApiService {
     } 
     
     getDeaths() {
-        return this.http.get('https://www.breakingbadapi.com/api/death-count?name=Gustavo+Fring')
+        return this.http.get('https://8100-e6fe03bb-b324-455b-8733-5f60e110241b.ws-eu01.gitpod.io/assets/deaths.json')
     }
 }
