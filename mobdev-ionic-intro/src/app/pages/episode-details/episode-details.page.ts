@@ -9,7 +9,7 @@ import { ActivatedRoute } from '@angular/router';
 export class EpisodeDetailsPage implements OnInit {
   episode: any;
   episodeId = null;
-  
+
   constructor(private activatedRoute: ActivatedRoute, private api: ApiService) {}
   
   ngOnInit() {
