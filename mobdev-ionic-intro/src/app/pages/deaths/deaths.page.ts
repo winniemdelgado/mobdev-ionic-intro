@@ -15,12 +15,9 @@ deaths: Observable<any>;
 
   ngOnInit() {
       this.deaths = this.api.getDeaths();
-      this.deaths.subscribe(data => {
-          console.log('my deaths: ', data);
-        });
   }
   openDetails(death) {
       let deathId = death.death_id;
-      this.router.navigateByUrl(`/tabs/deaths/${deathId}`);
+      this.router.navigateByUrl('/tabs/deaths/${deathId}');
   }
 }

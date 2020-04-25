@@ -18,11 +18,10 @@
   <ion-card *ngIf="episode" class="movie-card">
     <ion-card-header>Episode {{ episode.season }}: {{ episode.episode }}</ion-card-header>
     <ion-card-content>
-      {{ episode.season }}
     </ion-card-content>
     <ion-item class="movie-info" lines="none">
       <ion-icon name="episode" slot="start"></ion-icon>
-      Director: {{ episode.season }}
+      Season: {{ episode.season }}
     </ion-item>
     <ion-item class="movie-info" lines="none">
       <ion-icon name="calendar" slot="start"></ion-icon>
