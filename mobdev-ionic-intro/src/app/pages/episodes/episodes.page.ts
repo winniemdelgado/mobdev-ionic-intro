@@ -25,5 +25,4 @@ export class EpisodesPage implements OnInit {
       this.router.navigateByUrl('/tabs/episodes/${episodeId}');
 
   }
-
 }
