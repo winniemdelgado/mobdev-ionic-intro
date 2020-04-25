@@ -1,13 +1,9 @@
 <ion-header>
   <ion-toolbar color="primary">
-<<<<<<< HEAD
     <ion-title>Deaths</ion-title>
-=======
-    <ion-title>Deaths<ion-searchbar color="primary"></ion-searchbar></ion-title>
->>>>>>> 7f133701d3868543d4d76bbd4c017210762c435e
   </ion-toolbar>
 </ion-header>
-<ion-content padding>
+<ion-content>
 <ion-searchbar></ion-searchbar>
     <ion-list>
         <ion-item button detail lines="inset" *ngFor="let death of deaths | async" (click)="openDetails(death)">
