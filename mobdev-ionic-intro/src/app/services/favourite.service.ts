@@ -10,31 +10,31 @@ export class FavouriteService {
  
   constructor(private storage: Storage) { }
  
-  getEpisodes() {
+  getAllFilms() {
     return this.storage.get(STORAGE_KEY);
   }
  
-  isFavourite(episode_id) {
-    return this.getEpisodes().then(result => {
-      return result && result.indexOf(episode_id) !== -1;
+  isFavourite(filmId) {
+    return this.getAllFilms().then(result => {
+      return result && result.indexOf(filmId) !== -1;
     });
   }
  
-  favouriteEpisode(episode_id) {
-    return this.getEpisodes().then(result => {
+  favouriteFilm(filmId) {
+    return this.getAllFilms().then(result => {
       if (result) {
-        result.push(episode_id);
+        result.push(filmId);
         return this.storage.set(STORAGE_KEY, result);
       } else {
-        return this.storage.set(STORAGE_KEY, [episode_id]);
+        return this.storage.set(STORAGE_KEY, [filmId]);
       }
     });
   }
  
-  unfavouriteEpisode(episode_id) {
-    return this.getEpisodes().then(result => {
+  unfavouriteEpisode(filmId) {
+    return this.getAllFilms().then(result => {
       if (result) {
-        var index = result.indexOf(episode_id);
+        var index = result.indexOf(filmId);
         result.splice(index, 1);
         return this.storage.set(STORAGE_KEY, result);
       }
