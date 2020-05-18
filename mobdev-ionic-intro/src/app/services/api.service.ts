@@ -9,7 +9,7 @@ export class ApiService {
     constructor(private http: HttpClient) { }
 
     getEpisodes() {
-        return this.http.get('https://8100-e6fe03bb-b324-455b-8733-5f60e110241b.ws-eu01.gitpod.io/assets/episodes.json')
+        return this.http.get('https://fierce-shore-08896.herokuapp.com/assets/episodes.json')
     }
 
     getEpisode(id) {
