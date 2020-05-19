@@ -20,17 +20,17 @@ export class ApiService {
     }
 
     getCharacter(char_id) {
-        return this.http.get('https://8100-e6fe03bb-b324-455b-8733-5f60e110241b.ws-eu01.gitpod.io/assets/character.json');
+        return this.http.get('https://thawing-journey-42669.herokuapp.com/assets/characters.json/assets/character.json');
     }
     getQuotes() {
-        return this.http.get('https://8100-e6fe03bb-b324-455b-8733-5f60e110241b.ws-eu01.gitpod.io/assets/quotes.json')
+        return this.http.get('https://thawing-journey-42669.herokuapp.com/assets/characters.json/assets/quotes.json')
     }
 
     getQuote(quote_id) {
-        return this.http.get('https://8100-e6fe03bb-b324-455b-8733-5f60e110241b.ws-eu01.gitpod.io/assets/quote.json');
+        return this.http.get('https://thawing-journey-42669.herokuapp.com/assets/characters.json/assets/quote.json');
     } 
     
     getDeaths() {
-        return this.http.get('https://8100-e6fe03bb-b324-455b-8733-5f60e110241b.ws-eu01.gitpod.io/assets/deaths.json')
+        return this.http.get('https://thawing-journey-42669.herokuapp.com/assets/characters.json/assets/deaths.json')
     }
 }
