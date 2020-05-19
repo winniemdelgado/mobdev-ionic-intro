@@ -9,14 +9,14 @@ export class ApiService {
     constructor(private http: HttpClient) { }
 
     getEpisodes() {
-        return this.http.get('https://fierce-shore-08896.herokuapp.com/assets/episodes.json')
+        return this.http.get('https://thawing-journey-42669.herokuapp.com/assets/episodes.json')
     }
 
     getEpisode(id) {
-        return this.http.get('https://8100-e6fe03bb-b324-455b-8733-5f60e110241b.ws-eu01.gitpod.io/assets/episode.json');
+        return this.http.get('https://thawing-journey-42669.herokuapp.com/assets/episode.json');
     }
     getCharacters() {
-        return this.http.get('https://8100-e6fe03bb-b324-455b-8733-5f60e110241b.ws-eu01.gitpod.io/assets/characters.json')
+        return this.http.get('https://thawing-journey-42669.herokuapp.com/assets/characters.json')
     }
 
     getCharacter(char_id) {
